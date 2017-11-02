@@ -1,15 +1,64 @@
-name: my-snap-name # you probably want to 'snapcraft register <name>'
-version: '0.1' # just for humans, typically '1.2+git' or '1.3.2'
-summary: Single-line elevator pitch for your amazing snap # 79 char long summary
+name: pixum-fotoboek
+version: '0.1'
+summary: |
+  Fotoboek maken in topkwaliteit: het Pixum Fotoboek
 description: |
-  This is my-snap's description. You have a paragraph or two to tell the
-  most important story about your snap. Keep it under 100 words though,
-  we live in tweetspace and your description wants to look good in the snap
-  store.
+  Gemakkelijk en snel jouw fotoboek maken in 9 verschillende formaten. Kies
+  uit zes verschillende papiersoorten en meerdere soorten kaften en
+  bindingen. Lees meer over onze verschillende fotoboek-formaten en
+  opties of laat je inspireren door onze tips, workshops en klantenvoorbeelden!
+  In een Pixum Fotoboek bundel je de mooiste momenten en herinneringen in topkwaliteit.
 
-confinement: devmode # use 'strict' once you have the right plugs and slots
+grade: devel
+confinement: devmode
 
+#plugs:
+#  gnome-3-26-1604:
+#    interface: content
+#    target: gnome-platform
+#    default-provider: gnome-3-26-1604:gnome-3-26-1604
+
+
+apps:
+  pixum-fotoboek:
+    command: desktop-launch "$SNAP/Pixum\\ Fotowereld"
+    plugs:
+      - x11
+      - wayland
+      - network-control
+      - network-observe
+      - firewall-control
+      - home
+      - gsettings
+      - account-control
+      - mount-observe
+      - unity7
+      - browser-support
+      - desktop-legacy
+      - desktop
+      - network
+      - process-control
+      - system-observe
+#      - gnome-3-26-1604
 parts:
-  my-part:
-    # See 'snapcraft plugins'
-    plugin: nil
+  pixum-fotoboek:
+    plugin: dump
+    source: https://dls.photoprintit.com/api/getClient/12455-nl_BE/hps/f303030303030303030303030303030303030303030303030353635323936324/linux
+    source-type: tar
+    install: |
+      echo `$SNAPCRAFT_PART_INSTALL/install.pl -k -i $SNAPCRAFT_PART_INSTALL <<EOF
+      q
+      ja
+      EOF
+      `
+    after:
+      - desktop-qt5
+#      - desktop-glib-only    
+#      - desktop-gnome-platform    
+    stage-packages:
+      - unzip
+      - wget
+      - libsnappy1v5
+      - libxss1
+      - libglib2.0-bin
+      - libxtst6
