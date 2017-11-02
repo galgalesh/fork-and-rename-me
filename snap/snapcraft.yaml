@@ -11,6 +11,7 @@ description: |
 
 grade: devel
 confinement: devmode
+icon: snap/gui/pixum-fotoboek.png
 
 plugs:
   gnome-3-26-1604:
@@ -53,8 +54,8 @@ parts:
       `
     after:
 #      - desktop-qt5
-#      - desktop-glib-only    
-      - desktop-gnome-platform    
+#      - desktop-glib-only
+      - desktop-gnome-platform
     stage-packages:
       - unzip
       - wget
