@@ -12,11 +12,11 @@ description: |
 grade: devel
 confinement: devmode
 
-#plugs:
-#  gnome-3-26-1604:
-#    interface: content
-#    target: gnome-platform
-#    default-provider: gnome-3-26-1604:gnome-3-26-1604
+plugs:
+  gnome-3-26-1604:
+    interface: content
+    target: gnome-platform
+    default-provider: gnome-3-26-1604:gnome-3-26-1604
 
 
 apps:
@@ -39,7 +39,7 @@ apps:
       - network
       - process-control
       - system-observe
-#      - gnome-3-26-1604
+      - gnome-3-26-1604
 parts:
   pixum-fotoboek:
     plugin: dump
@@ -52,13 +52,13 @@ parts:
       EOF
       `
     after:
-      - desktop-qt5
+#      - desktop-qt5
 #      - desktop-glib-only    
-#      - desktop-gnome-platform    
+      - desktop-gnome-platform    
     stage-packages:
       - unzip
       - wget
       - libsnappy1v5
       - libxss1
-      - libglib2.0-bin
-      - libxtst6
+#      - libglib2.0-bin
+#      - libxtst6
