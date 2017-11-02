@@ -10,6 +10,7 @@ description: |
   In een Pixum Fotoboek bundel je de mooiste momenten en herinneringen in topkwaliteit.
 
 grade: devel
+architectures: [amd64]
 confinement: devmode
 icon: snap/gui/pixum-fotowereld.png
 
@@ -22,7 +23,7 @@ plugs:
 
 apps:
   pixum-fotowereld:
-    command: desktop-launch "$SNAP/Pixum\\ Fotowereld"
+    command: desktop-launch env HOME="/home/$USER" $SNAP/Pixum\\ Fotowereld
     plugs:
       - x11
       - wayland
