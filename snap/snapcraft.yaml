@@ -1,4 +1,4 @@
-name: pixum-fotoboek
+name: pixum-fotowereld
 version: '0.1'
 summary: |
   Fotoboek maken in topkwaliteit: het Pixum Fotoboek
@@ -11,7 +11,7 @@ description: |
 
 grade: devel
 confinement: devmode
-icon: snap/gui/pixum-fotoboek.png
+icon: snap/gui/pixum-fotowereld.png
 
 plugs:
   gnome-3-26-1604:
@@ -21,7 +21,7 @@ plugs:
 
 
 apps:
-  pixum-fotoboek:
+  pixum-fotowereld:
     command: desktop-launch "$SNAP/Pixum\\ Fotowereld"
     plugs:
       - x11
@@ -42,7 +42,7 @@ apps:
       - system-observe
       - gnome-3-26-1604
 parts:
-  pixum-fotoboek:
+  pixum-fotowereld:
     plugin: dump
     source: https://dls.photoprintit.com/api/getClient/12455-nl_BE/hps/f303030303030303030303030303030303030303030303030353635323936324/linux
     source-type: tar

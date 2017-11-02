@@ -1,12 +1,12 @@
 [Desktop Entry]
 Version=1.0
 Encoding=UTF-8
-Name=Pixum Fotoboek
-Name[de]=Pixum Fotoboek
+Name=Pixum Fotowereld
+Name[de]=Pixum Fotowereld
 StartupNotify=true
 Terminal=false
 Type=Application
-Icon=${SNAP}/meta/gui/pixum-fotoboek.png
-Exec=pixum-fotoboek
+Icon=${SNAP}/meta/gui/pixum-fotowereld.png
+Exec=pixum-fotowereld
 Categories=Graphics;
 MimeType=application/x-hps-mcf
