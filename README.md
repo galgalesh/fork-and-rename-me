@@ -8,7 +8,8 @@
 distributions.</p>
 
 <p align="center">
-[![Snap Status](https://build.snapcraft.io/badge/galgalesh/pixum-fotowereld.svg)](https://build.snapcraft.io/user/galgalesh/pixum-fotowereld)
+
+<a href="https://build.snapcraft.io/user/galgalesh/pixum-fotowereld"><img src="https://build.snapcraft.io/badge/galgalesh/pixum-fotowereld.svg" alt="Snap Status"></a>
 </p>
 
 
