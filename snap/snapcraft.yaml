@@ -10,7 +10,6 @@ description: |
   In een Pixum Fotoboek bundel je de mooiste momenten en herinneringen in topkwaliteit.
 
 grade: devel
-architectures: [amd64]
 confinement: devmode
 icon: snap/gui/pixum-fotowereld.png
 
