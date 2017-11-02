@@ -7,16 +7,15 @@
 <p align="center"><b>This is the snap for Pixum Fotowereld</b>, <i>"a Dutch-language photobook-creation app"</i>. It works on Ubuntu, Fedora, Debian, and other major Linux
 distributions.</p>
 
-<!-- Uncomment and modify this when you are provided a build status badge
 <p align="center">
-<a href="https://build.snapcraft.io/user/snapcrafters/fork-and-rename-me"><img src="https://build.snapcraft.io/badge/snapcrafters/fork-and-rename-me.svg" alt="Snap Status"></a>
+[![Snap Status](https://build.snapcraft.io/badge/galgalesh/pixum-fotowereld.svg)](https://build.snapcraft.io/user/galgalesh/pixum-fotowereld)
 </p>
--->
+
 
 ## Install
 
-    sudo apt install snapd-xdg-open
-    sudo snap install pixum-fotoboek
+    sudo snap install --edge pixum-fotowereld --devmode
+
 
 ([Don't have snapd installed?](https://snapcraft.io/docs/core/install))
 
@@ -38,15 +37,15 @@ upstream so Pixum Fotowereld can authoritatively publish future releases.
   - [x] Create a snap that runs in `devmode`
   - [x] Register the snap in the store, **using the preferred upstream name**
   - [x] Add a screenshot to this `README.md`
-  - [ ] Publish the `devmode` snap in the Snap store edge channel
-  - [ ] Add install instructions to this `README.md`
-  - [ ] Update snap store metadata, icons and screenshots
+  - [x] Publish the `devmode` snap in the Snap store edge channel
+  - [x] Add install instructions to this `README.md`
+  - [x] Update snap store metadata, icons and screenshots
   - [ ] Convert the snap to `strict` confinement, or `classic` confinement if it qualifies
   - [ ] Publish the confined snap in the Snap store beta channel
   - [ ] Update the install instructions in this `README.md`
   - [ ] Post a call for testing on the [Snapcraft Forum](https://forum.snapcraft.io) - [link]()
   - [ ] Ask a [Snapcrafters admin](https://github.com/orgs/snapcrafters/people?query=%20role%3Aowner) to fork your repo into github.com/snapcrafters, transfer the snap name from you to snapcrafters, and configure the repo for automatic publishing into edge on commit
-  - [ ] Add the provided Snapcraft build badge to this `README.md`
+  - [x] Add the provided Snapcraft build badge to this `README.md`
   - [ ] Publish the snap in the Snap store stable channel
   - [ ] Update the install instructions in this `README.md`
   - [ ] Post an announcement in the [Snapcraft Forum](https://forum.snapcraft.io) - [link]()
@@ -62,9 +61,9 @@ If you have any questions, [post in the Snapcraft forum](https://forum.snapcraft
 
 ## The Snapcrafters
 
-| [![Your Name](http://gravatar.com/avatar/bc0bced65e963eb5c3a16cab8b004431/?s=128)](https://github.com/yourname/) |
+| [![Your Name](https://s.gravatar.com/avatar/b6d238602f432bd0981d6ac45747d11b?s=80)](https://github.com/galgalesh/) |
 | :---: |
-| [Your Name](https://github.com/yourname/) |
+| [Merlijn Sebrechts](https://github.com/galgalesh/) |
 
 <!-- Uncomment and modify this when you have upstream contacts
 ## Upstream
